@@ -1,0 +1,22 @@
+﻿<Window x:Class="Diplom.Lession1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        mc:Ignorable="d"
+        Title="Лекия первый курс" Height="650" Width="1000"
+        WindowState="Maximized"
+        WindowStyle="ThreeDBorderWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer>
+            <TextBox x:Name="LessionBox" TextWrapping="Wrap" FontFamily="Times New Roman" TextOptions.TextFormattingMode="Display" FontSize="20"
+                     Background="AntiqueWhite" Foreground="Navy" Padding="5, 10, 5, 10" />
+        </ScrollViewer>
+        <Button x:Name="Back" Content="Назад" Click="Back_Click" Grid.Row="1" HorizontalAlignment="Center" Width="100" Height="25" Margin="5 5 0 10"/>
+    </Grid>
+</Window>

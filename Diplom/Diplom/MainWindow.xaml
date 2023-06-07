@@ -1,0 +1,35 @@
+﻿<Window x:Class="Diplom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Вход" Height="450" Width="400" WindowStyle="ThreeDBorderWindow">
+    <Grid Background="#ffdadada">
+        <Border MinWidth="200" Margin="15" Background="White" VerticalAlignment="Center" Padding="20" MaxWidth="400" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Вход" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
+
+                <Grid Margin="0 0 0 20">
+                    <Button HorizontalAlignment="Center" Content="Создать аккаунт" x:Name="Btn_Reg" Click="BtnReg_Click" Style="{StaticResource MaterialDesignFlatButton}"/>
+                </Grid>
+                <TextBox x:Name="textBoxLogin" ToolTip="Введите логин" Margin="0 0 0 10" materialDesign:HintAssist.Hint="Введите логин"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <PasswordBox x:Name="passBox" ToolTip="Введите пароль" Margin="0 0 0 10" materialDesign:HintAssist.Hint="Введите пароль"  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <Button Content="Войти" Margin="0 20" Click="BtnEnter_Click" Style="{StaticResource MaterialDesignRaisedButton}"/>
+                <Button Content="Skip" Margin="0 20" Click="BtnSkip_Click" Style="{StaticResource MaterialDesignRaisedButton}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

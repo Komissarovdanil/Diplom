@@ -1,0 +1,85 @@
+﻿<Window x:Class="Diplom.Tasks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        mc:Ignorable="d"
+        Title="Задачи"
+        WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="BtnExit" Content="Выход" Grid.Row="1" HorizontalAlignment="Right" Margin="0 0 10 0" Width="100" Height="25" Click="BtnExit_Click"/>
+        <Button x:Name="BtnUsExit" Content="Выход из учётной записи" Grid.Row="1" HorizontalAlignment="Left" Width="200" Height="25" Margin="10 0 0 0" Click="BtnUsExit_Click"/>
+        <TabControl>
+            <TabItem Header="Улицы">
+                <StackPanel>
+                    <Button x:Name="Test_1" Content="Ул.Ленина д 149" 
+                            Click="Test_1_Click" Margin="10 10 10 0" Height="50"/>
+                    <Button x:Name="Test_2" Content="Ул.Симановского д 29" 
+                            Click="Test_2_Click" Margin="10 10 10 0" Height="50"/>
+                    <Button x:Name="Test_3" Content="Давыдовский 3 д 28" 
+                            Click="Test_3_Click" Margin="10 10 10 0" Height="50"/>
+                    <Button x:Name="Test_4" Content="Ул.Рабочая д 11" 
+                            Click="Test_4_Click" Margin="10 10 10 0" Height="50"/>
+                    <Button x:Name="Test_5" Content="Ул.Никитская д 132" 
+                            Click="Test_5_Click" Margin="10 10 10 0" Height="50"/>
+                    <Button x:Name="Test_6" Content="Ул.Магистральная д 53" 
+                            Click="Test_6_Click" Margin="10 10 10 0" Height="50"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Счета за год">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="181*"/>
+                        <ColumnDefinition Width="73*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Счета за год" x:Name="Lession" Click="Lession_Click" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Margin="10 10 10 0" Height="50" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+                <TabItem Header="Тесты">
+                    <ScrollViewer>
+                        <StackPanel>
+                            <Button x:Name="Pr_1" Content="№1" Grid.Column="0" Grid.Row="0" Click="Pr_1_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_2" Content="№2" Grid.Column="1" Grid.Row="0" Click="Pr_2_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_3" Content="№3" Grid.Column="2" Grid.Row="0" Click="Pr_3_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_3_1" Content="№3" Grid.Column="3" Grid.Row="0" Click="Pr_3_1_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_3_2" Content="№4" Grid.Column="4" Grid.Row="0" Click="Pr_3_2_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_4_1" Content="№5" Grid.Column="0" Grid.Row="1" Click="Pr_4_1_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_4_2" Content="№6" Grid.Column="1" Grid.Row="1" Click="Pr_4_2_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_4_5" Content="№7" Grid.Column="2" Grid.Row="1" Click="Pr_4_5_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_5" Content="№8" Grid.Column="3" Grid.Row="1" Click="Pr_5_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_5_1" Content="№9" Grid.Column="4" Grid.Row="1" Click="Pr_5_1_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_6" Content="№10" Grid.Column="0" Grid.Row="2" Click="Pr_6_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_6_2" Content="№11" Grid.Column="1" Grid.Row="2" Click="Pr_6_2_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_7" Content="№12" Grid.Column="2" Grid.Row="2" Click="Pr_7_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_8" Content="№13" Grid.Column="3" Grid.Row="2" Click="Pr_8_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_9_10" Content="№14" Grid.Column="4" Grid.Row="2" Click="Pr_9_10_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_11" Content="№15" Grid.Column="0" Grid.Row="3" Click="Pr_11_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_11_1" Content="№16" Grid.Column="1" Grid.Row="3" Click="Pr_11_1_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_12" Content="№17" Grid.Column="2" Grid.Row="3" Click="Pr_12_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_13" Content="№18" Grid.Column="3" Grid.Row="3" Click="Pr_13_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_13Sl" Content="№19" Grid.Column="4" Grid.Row="3" Click="Pr_13Sl_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_14" Content="№20" Grid.Column="0" Grid.Row="4" Click="Pr_14_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_15" Content="№21" Grid.Column="1" Grid.Row="4" Click="Pr_15_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_16" Content=" №22" Grid.Column="2" Grid.Row="4" Click="Pr_16_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_16_1" Content=" №23" Grid.Column="3" Grid.Row="4" Click="Pr_16_1_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_17" Content="№24" Grid.Column="4" Grid.Row="4" Click="Pr_17_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_18" Content=" №25" Grid.Column="0" Grid.Row="5" Click="Pr_18_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_19" Content=" №26" Grid.Column="1" Grid.Row="5" Click="Pr_19_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_21" Content=" №27" Grid.Column="2" Grid.Row="5" Click="Pr_21_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_22" Content="№28" Grid.Column="3" Grid.Row="5" Click="Pr_22_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_23" Content=" №29" Grid.Column="4" Grid.Row="5" Click="Pr_23_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_24" Content="№30" Grid.Column="0" Grid.Row="6" Click="Pr_24_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_25" Content="№31" Grid.Column="1" Grid.Row="6" Click="Pr_25_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_26" Content="№32" Grid.Column="2" Grid.Row="6" Click="Pr_26_Click" Height="50" Margin="0 5 0 5"/>
+                            <Button x:Name="Pr_29" Content="№33" Grid.Column="3" Grid.Row="6" Click="Pr_29_Click" Height="50" Margin="0 5 0 5"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
