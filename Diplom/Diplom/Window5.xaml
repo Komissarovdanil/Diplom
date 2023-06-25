@@ -1,0 +1,17 @@
+﻿<Window x:Class="Diplom.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        mc:Ignorable="d"
+        Title="Ул.Никитская д 132" Height="450" Width="800"
+        WindowState="Maximized">
+    <Grid Background="#FF229CC5">
+        <Button Content="Назад" Margin="10,0,0,10" Click="Back4" HorizontalContentAlignment="Stretch" HorizontalAlignment="Left" Width="100" Height="25" VerticalAlignment="Bottom" Background="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="170,100,0,0" TextWrapping="Wrap" Text="Ул.Никитская д 132" VerticalAlignment="Top" Width="230" Height="120" FontSize="20" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="430,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="230" Name="box" Text="950382" Height="120" FontSize="20" Foreground="White" />
+        <TextBlock HorizontalAlignment="Left" Margin="215,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="128" Foreground="White"><Run Language="ru-ru" Text="Улица"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="516,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="74" Foreground="White"><Run Language="ru-ru" Text="Счётчик"/></TextBlock>
+    </Grid>
+</Window>
